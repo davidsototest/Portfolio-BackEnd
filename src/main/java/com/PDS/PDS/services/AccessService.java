@@ -13,7 +13,7 @@ public class AccessService {
     @Autowired
     AccessRepository accessRepository;
     
-     //metodo que trae la lista de words
+     //metodo que trae l
     public boolean obtenerAccess(AccessModel access){ 
             
         return accessRepository.equals(access);
