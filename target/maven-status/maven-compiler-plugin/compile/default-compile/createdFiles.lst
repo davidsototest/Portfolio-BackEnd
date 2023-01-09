@@ -3,6 +3,7 @@ com\PDS\PDS\controllers\UsuarioController.class
 com\PDS\PDS\controllers\EducationController.class
 com\PDS\PDS\repository\WordRepository.class
 com\PDS\PDS\services\EducationService.class
+com\PDS\PDS\WebConfig.class
 com\PDS\PDS\controllers\SkillController.class
 com\PDS\PDS\repository\EducationRepository.class
 com\PDS\PDS\services\ContactService.class
