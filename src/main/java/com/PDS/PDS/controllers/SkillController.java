@@ -35,13 +35,8 @@ public class SkillController {
     
     //metodo para eliminar word pasando word/1 1=ID del word
     @DeleteMapping ( path = "/{id}")
-    public String eliminarPorId(@PathVariable("id") int id){
-        boolean ok = this.skillService.eliminarSkill(id);
-        if (ok){
-            return "se elimino el Skill con id: " + id;
-        } else{
-            return "No pudo eliminar el Skill con id: " + id;
-        }
+    public void eliminarPorId(@PathVariable("id") int id){
+        this.skillService.eliminarSkill(id);        
     }
     
 }

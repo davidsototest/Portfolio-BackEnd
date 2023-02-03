@@ -36,13 +36,8 @@ public class EducationController {
     
     //metodo para eliminar la education pasando education/1 1=ID de la education
     @DeleteMapping ( path = "/{id}")
-    public String eliminarPorId(@PathVariable("id") int id){
-        boolean ok = this.educationService.eliminarEducation(id);
-        if (ok){
-            return "se elimino la Educacion con id: " + id;
-        } else{
-            return "No pudo eliminar la Educacion con id: " + id;
-        }
+    public void eliminarPorId(@PathVariable("id") int id){
+        this.educationService.eliminarEducation(id);        
     }
     
 }

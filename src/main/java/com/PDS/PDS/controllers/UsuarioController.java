@@ -44,12 +44,7 @@ public class UsuarioController {
     
     //este metodo debe borrarse al final de todo
     @DeleteMapping ( path = "/{id}")
-    public String eliminarPorId(@PathVariable("id") int id){
-        boolean ok = this.usuarioService.eliminarUsuario(id);
-        if (ok){
-            return "se elimino el user con id: " + id;
-        } else{
-            return "No pudo eliminar el user con id: " + id;
-        }
+    public void eliminarPorId(@PathVariable("id") int id){
+        this.usuarioService.eliminarUsuario(id);        
     }
 }

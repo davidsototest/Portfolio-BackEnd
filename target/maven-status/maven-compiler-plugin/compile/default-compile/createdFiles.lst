@@ -16,7 +16,6 @@ com\PDS\PDS\models\HobbiesModel.class
 com\PDS\PDS\services\UsuarioService.class
 com\PDS\PDS\models\SkillModel.class
 com\PDS\PDS\models\AccessModel.class
-com\PDS\PDS\controllers\AccessController.class
 com\PDS\PDS\repository\SkillRepository.class
 com\PDS\PDS\controllers\ContactController.class
 com\PDS\PDS\models\ProjectModel.class

@@ -35,13 +35,8 @@ public class HobbiesController {
     
     //metodo para eliminar word pasando word/1 1=ID del word
     @DeleteMapping ( path = "/{id}")
-    public String eliminarPorId(@PathVariable("id") int id){
-        boolean ok = this.hobbiesService.eliminarHobbies(id);
-        if (ok){
-            return "se elimino el Hobbie con id: " + id;
-        } else{
-            return "No pudo eliminar el Hobbie con id: " + id;
-        }
+    public void eliminarPorId(@PathVariable("id") int id){
+        this.hobbiesService.eliminarHobbies(id);        
     }
     
 }

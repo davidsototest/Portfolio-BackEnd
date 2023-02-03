@@ -35,13 +35,8 @@ public class ProjectController {
     
     //metodo para eliminar word pasando word/1 1=ID del word
     @DeleteMapping ( path = "/{id}")
-    public String eliminarPorId(@PathVariable("id") int id){
-        boolean ok = this.projectService.eliminarProject(id);
-        if (ok){
-            return "se elimino el Proyecto con id: " + id;
-        } else{
-            return "No pudo eliminar el Proyecto con id: " + id;
-        }
+    public void eliminarPorId(@PathVariable("id") int id){
+        this.projectService.eliminarProject(id);        
     }
     
 }

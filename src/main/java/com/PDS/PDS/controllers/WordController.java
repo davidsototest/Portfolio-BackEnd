@@ -37,11 +37,6 @@ public class WordController {
     @DeleteMapping ( path = "/{id}")
     public void eliminarPorId(@PathVariable("id") int id){
         this.wordService.eliminarWord(id);
-//        if (ok){
-//            return "se elimino el Trabajo con id: " + id;
-//        } else{
-//            return "No pudo eliminar el Trabajo con id: " + id;
-//        }
     }
     
 }
